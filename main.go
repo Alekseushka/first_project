@@ -36,7 +36,7 @@ func main() {
 	router.POST("/upload", func(c *gin.Context) {
 		
 	})
-	router.Run(":8080")
+	router.Run(cfg.Address)
 }
 
 func setupLogger(env string) *slog.Logger {
